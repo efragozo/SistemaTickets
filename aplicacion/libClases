@@ -1,0 +1,136 @@
+class Cliente(object):
+    """docstring for Usuario"""
+    def __init__(self, id, cedula, nombre, apellido, genero, fechaNacimiento,idCargo):
+        super(Cliente, self).__init__()
+        self.__id = id
+        self.__cedula = cedula
+        self.__nombre = nombre
+        self.__apellido = apellido
+        self.__genero = genero
+        self.__fechaNacimiento = fechaNacimiento
+        self.__idCargo = idCargo
+    def getId(self):
+        return self.__id
+    def setId(self, id):
+        self.__id = id
+    def getCedula(self):
+        return self.__cedula
+    def setCedula(self, cedula):
+        self.__cedula = cedula
+    def getNombre(self):
+        return self.__nombre
+    def setNombre(self, nombre):
+        self.__nombre = nombre
+    def getApellido(self):
+        return self.__apellido
+    def setApellido(self, apellido):
+        self.__apellido = apellido
+    def getGenero(self):
+        return self.__genero
+    def setGenero(self, genero):
+        self.__genero = genero
+    def getFechaNacimiento(self):
+        return self.__fechaNacimiento
+    def setEstado(self, fechaNacimiento):
+        self.__fechaNacimiento = fechaNacimiento
+    def getIdCargo(self):
+        return self.__idCargo
+    def setEstado(self, idCargo):
+        self.__idCargo = idCargo
+class Departamento(object):
+    """docstring for Departamento"""
+    def __init__(self, id, nomDepartamento, jefe, idEstadoDepartamneto):
+        super(Departamento, self).__init__()
+        self.__id = id
+        self.__nomDepartamento = nomDepartamento
+        self.__jefe = jefe
+        self.__idEstadoDepartamneto = idEstadoDepartamneto
+    def getId(self):
+        return self.__id
+    def setId(self, id):
+        self.__id = id
+    def getNomDepartamento(self):
+        return self.__nomDepartamento
+    def setNombre(self, nomDepartamento):
+        self.__nomDepartamento = nomDepartamento
+    def getJefe(self):
+        return self.__jefe
+    def setPrecio(self, jefe):
+        self.__jefe = jefe
+    def getIdEstadoDepartamento(self):
+        return self.__idEstadoDepartamneto
+    def setDescripcion(self, idEstadoDepartamneto):
+        self.__idEstadoDepartamneto = idEstadoDepartamneto
+class PersonalSoporte(object):
+    """docstring for PersonalSoporte"""
+    def __init__(self, identificacion, nombres, apellidos, email, direccion, idEstadoSoporte, telefonos, idRol):
+        super(PersonalSoporte, self).__init__()
+        self.__identificacion = identificacion
+        self.__nombres = nombres
+        self.__apellidos = apellidos
+        self.__email = email
+        self.__direccion = direccion
+        self.__idEstadoSoporte = idEstadoSoporte
+        self.__telefonos = telefonos
+        self.__idRol = idRol
+    def getIdentificacion(self):
+        return self.__identificacion
+    def setIdentificacion(self, identificacion):
+        self.__identificacion = identificacion
+    def getNombres(self):
+        return self.__nombres
+    def setNombres(self, nombres):
+        self.__nombres = nombres
+    def getApellidos(self):
+        return self.__apellidos
+    def setApellidos(self, apellidos):
+        self.__apellidos = apellidos
+    def getEmail(self):
+        return self.__email
+    def setEmail(self, email):
+        self.__email = email
+    def getDireccion(self):
+        return self.__direccion
+    def setDireccion(self, direccion):
+        self.__direccion = direccion
+    def getIdEstadoSoporte(self):
+        return self.__idEstadoSoporte
+    def setIdEstadoSoporte(self, idEstadoSoporte):
+        self.__idEstadoSoporte = idEstadoSoporte
+    def getTelefonos(self):
+        return self.__telefonos
+    def setTelefonos(self, telefonos):
+        self.__telefonos = telefonos
+    def getIdRol(self):
+        return self.__idRol
+    def setIdRol(self, email):
+        self.__idRol = idRol        
+class Ticket(object):
+    """docstring for Ticket"""
+    def __init__(self, idDescripcion, fechaReportado, fechaArreglado, cliente, idEstadoTicket):
+        super(Ticket, self).__init__()
+        self.__idDescripcion = idDescripcion
+        self.__fechaReportado = fechaReportado
+        self.__fechaArreglado = fechaArreglado
+        self.__cliente = cliente
+        self.__idEstadoTicket = idEstadoTicket        
+    def getIdDescripcion(self):
+        return self.__idDescripcion
+    def setIdDescripcion(self, idDescripcion):
+        self.__idDescripcion = idDescripcion
+    def getFechaReportado(self):
+        return self.__fechaReportado
+    def setFechaReportado(self, fechaReportado):
+        self.__fechaReportado = fechaReportado
+    def getFechaArreglado(self):
+        return self.__fechaArreglado
+    def setFechaArreglado(self, fechaArreglado):
+        self.__fechaArreglado = fechaArreglado
+    def getCliente(self):
+        return self.__cliente
+    def setCliente(self, cliente):
+        self.__cliente = cliente
+    def getIdEstadoTicket(self):
+        return self.__idEstadoTicket
+    def setIdEstadoTicket(self, idEstadoTicket):
+        self.__idEstadoTicket = idEstadoTicket
